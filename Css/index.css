@@ -1,0 +1,108 @@
+
+    /* Global Styles */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin-bottom: 60px; /* space for bottom nav */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000;
+  border-bottom: 1px solid #333;
+}
+
+.navbar .navbar-brand,
+.navbar i {
+  color: white;
+}
+
+/* Story Section */
+.story-img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #c13584;
+  padding: 2px;
+  transition: transform 0.3s ease;
+}
+
+.story-img:hover {
+  animation: pulse 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.story-name {
+  font-size: 12px;
+  color: white !important;
+  margin-top: 4px;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Card/Post Styling */
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+}
+
+.card-header,
+.card-body,
+.card-text,
+.form-control {
+  color: white;
+}
+
+/* Input Field Styling */
+.form-control {
+  background-color: #111;
+  color: white;
+  border: 1px solid #444;
+}
+
+/* Like Button Styles */
+.like-btn {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.like-btn.liked {
+  color: red;
+  animation: pop 0.3s ease;
+}
+
+/* Like Animation */
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+.bottom-nav i {
+  font-size: 22px;
+  color: white;
+}
+
+
+  
